@@ -1,6 +1,6 @@
-1. SQL Data Cleaning
+# SQL Data Cleaning
 
-# sql-data-cleaning-project
+1. sql-data-cleaning-project
 
 A hands-on SQL project focused on cleaning and preparing a layoffs dataset for analysis.
 # SQL Data Cleaning Project
@@ -41,9 +41,9 @@ Practised using SQL to identify data quality issues, remove duplicate records, a
 
 *This is a learning project. The dataset and tutorial are credited to their original sources.*
 
-2. SQL Exploratory Data Analysis (EDA)
+##SQL Exploratory Data Analysis (EDA)
 
-## SQL Exploratory Data Analysis (EDA) Project
+2. SQL Exploratory Data Analysis (EDA) Project
 
 ### Overview
 This project explores a layoffs dataset using SQL to identify patterns, trends, and insights related to layoffs across companies, industries, and years. It follows the SQL Data Cleaning Project and uses the cleaned dataset for further analysis.
