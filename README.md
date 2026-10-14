@@ -1,4 +1,7 @@
+1. SQL Data Cleaning
+
 # sql-data-cleaning-project
+
 A hands-on SQL project focused on cleaning and preparing a layoffs dataset for analysis.
 # SQL Data Cleaning Project
 
@@ -37,3 +40,46 @@ Practised using SQL to identify data quality issues, remove duplicate records, a
 ---
 
 *This is a learning project. The dataset and tutorial are credited to their original sources.*
+
+2. SQL Exploratory Data Analysis (EDA)
+
+## SQL Exploratory Data Analysis (EDA) Project
+
+### Overview
+This project explores a layoffs dataset using SQL to identify patterns, trends, and insights related to layoffs across companies, industries, and years. It follows the SQL Data Cleaning Project and uses the cleaned dataset for further analysis.
+
+### Tools Used
+- MySQL
+- MySQL Workbench
+- SQL
+
+### Analysis Performed
+- Analysed total layoffs by company and industry.
+- Explored layoff trends across different years.
+- Used aggregate functions such as `SUM()`, `MAX()`, `MIN()`, and `AVG()`.
+- Applied `GROUP BY` and `ORDER BY` to summarize and rank results.
+- Used date functions to explore trends over time.
+
+### SQL Concepts Practised
+- Aggregate functions
+- `GROUP BY` and `ORDER BY`
+- Date functions
+- Common Table Expressions (CTEs)
+- Window functions
+- Subqueries
+
+### Key Learning Outcomes
+- Practised exploring datasets using SQL.
+- Learned to summarize and compare data across categories.
+- Developed skills in identifying patterns and trends.
+- Improved SQL query-writing and analytical thinking.
+
+### Project File
+- `sql_eda_project.sql` — SQL queries used for exploratory data analysis.
+
+### Learning Resource
+Alex The Analyst — SQL Exploratory Data Analysis Project.
+
+---
+
+*This project was completed for learning and portfolio development. Credit is given to the original tutorial and dataset source.*
