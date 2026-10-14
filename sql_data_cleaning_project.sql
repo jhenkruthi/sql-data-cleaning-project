@@ -1,3 +1,12 @@
+--data cleaning
+
+--1. remove duplicates
+--2. standardise the data
+--3. remove null or blank values
+--4. remove any columns
+
+--1. remove duplicates
+
 select *
 from layoffs;
 
@@ -30,9 +39,6 @@ from layoffs_staging
 where company = 'casper';
 
 
-
-
-
 CREATE TABLE `layoffs_staging2` (
   `company` text,
   `location` text,
@@ -60,6 +66,14 @@ delete
 from layoffs_staging2
 where row_num > 1;
 
+select *
+from layoffs_staging2;
+
+
+--2. standardise the data
+select distinct comapny
+from layoffs_staging2;
+
 select company, trim(company)
 from layoffs_staging2;
 
@@ -86,6 +100,8 @@ update layoffs_staging2
 set country = 'United States'
 where country like 'united states%';
 
+--formating date column
+
 select `date`
 from layoffs_staging2;
 
@@ -94,6 +110,8 @@ set `date` = str_to_date(`date`, '%m/%d/%Y');
 
 alter table layoffs_staging2
 modify column `date` date;
+
+--3. remove null or blank values
 
 select t1.company, t1.industry, t2.industry
 from layoffs_staging2 as t1
@@ -122,6 +140,8 @@ delete
 from layoffs_staging2
 where total_laid_off is null
 and percentage_laid_off is null;
+
+--4. remove any columns
 
 alter table layoffs_staging2
 drop column row_num;
